@@ -22,8 +22,8 @@ print(sess.run(i + j))
 a = tf.Variable([0])
 # print(a)
 a.assign([1])
-# print(a)
+print("Value of a: ", a)
 
 with tf.Session() as sess:
-    initializer = tf.global_variables_initializer()
-    print(a.eval)
+    initializer = tf.global_variables_initializer
+    print(a.eval())
